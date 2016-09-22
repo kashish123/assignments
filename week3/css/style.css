@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-size: 16px;
+	color: #fff;
+	background-color: lightseagreen;
+	font-family: 'Farsan', sans-serif;
+}
+#header-nav{
+	background-color: royalblue;
+	border-radius: 0.1;
+	border: 0 solid black;
+}
+.navbar-brand{
+	padding-top: 25px;
+}
+.navbar-brand{
+	font-family: 'Lobster' ,sans-serif;
+	color: springgreen;
+	font-size: 1em;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px palegreen;
+	margin-top: -10px;
+	line-height: 1.00;
+	letter-spacing: .1em;
+}
+.navbar-brand a:hover , .navbar-brand a:focus{
+	text-decoration: none;
+} 
+#nav-list{
+	background-color: indigo;
+	margin-top: -5px;
+}
+#nav-list a{
+	color: turquoise;
+	font-size: 1.4em;
+	text-align: center;
+	border: 1px solid bisque;
+}
+#nav-list a:hover{
+	background-color: mistyrose;
+	border: 1px solid indianred;
+	opacity: 0.5;
+}
+.wrap{
+	padding: 2vh;
+	background-color: blueviolet;
+}
+#page-title{
+	font-family: 'Arima Madurai', sans-serif;
+	font-weight: 700;
+	font-size: 1.8em;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	padding-top: 10px;
+}
+.menu-item-description{
+	margin-bottom: 20px;
+}
+#menu-item{
+	background-color: teal;
+}
+.menu-item-title{
+	font-size: 1.6em;
+}
+.menu-item-details{
+	font-size: 1.2em;
+}
+#main-content{
+	margin-bottom: 15px;
+}
+#uptop{
+	color: #557;
+	font-size: 1.3em;
+	font-weight: 700;
+}
+@media (max-width: 768px){
+	.navbar-brand h1{
+		font-size: 2.1em;
+	}
+	#page-title{
+		font-size: 1.9em;
+	}
+	#main-content{
+		margin-bottom: 30px;
+	}
+	.menu-item-description{
+		padding: 7vh;
+		margin-bottom: 20px;
+	}
+}
+
