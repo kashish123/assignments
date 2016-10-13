@@ -1,4 +1,253 @@
-p{
-	background-color: red;
+*{
+	box-sizing: border-box;
+}
+
+/* For mobile phones: */
+@media (min-width: 425px) and (max-width: 767px ){
+    
+    .panel{
+	max-width:100%;
+	 }
+	 .panel-body{
+	 	height: 350px;
+	 }
+}
+/*for tablets*/
+@media (min-width: 768px) and (max-width: 991px){
+	.panel-body{
+		height: 400px ;
+	}
+}
+
+
+
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: white;
+  font-family: 'Oxygen', sans-serif;
+  
+}
+#brand
+{   font-family: sans-serif;
+	color: teal ;
+	background-color: skyblue;
+	height: 50px;
+	padding: 5px 0px 5px;
+	margin-top: 0px;
+	text-align: center;
+	margin-bottom: 30px;
+
+}
+
+/* chat box header*/
+.panel{
+	margin-top: 12px;
+	margin-bottom: 50px; 
+	background-image: url("../images/background.png");
+	border: 0.1px solid black;
+	border-bottom: 0px;
+	border-radius: 10px;
+	max-height: 50px;
+	max-width:400px;
+	margin: auto;
+}
+.panel-heading{
+	position: relative;
+	margin-top: 2px;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: white;
+	z-index: 100;
+	border-bottom: 0.1px solid grey;
+	border-top: 0px;
+	border-radius: 10px;
+	opacity: 0.6;
+}
+#back{
+	position: relative;
+	width: 90px;
+	height: 50px;
+	margin-top: -15px;
+	margin-bottom: 5px;
+	left: 0px;
+	color: white;
+	line-height: 50px;
+	font-size: 30px;
+	margin-left: -15px;
+	cursor: pointer;
+}
+#back a:hover{
+	background-color: grey;
+}
+#back span{
+	margin-top: 10px;
+	align: left;
+	color: black;
+	opacity: 100%;
+}
+.name{
+	position: absolute;
+	top: 8px;
+	left: 90px;
+	color: black;
+	font-size: 1.7em;
+	opacity: 0.9;
+	text-transform: uppercase;
+}
+.name a{
 	color: black;
 }
+.name a:hover {
+	text-decoration: none;
+}
+#person img{
+	position: absolute;
+	top: 5px;
+	right: 30px;
+	width: 40px;
+	height: 40px;
+	background-color: black;
+	border-radius: 100%;
+	margin-right: 15px;
+	opacity: 0.9;
+}
+/*chat box body*/
+#date{
+	text-align: center;
+	position: relative;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	opacity: 0.3;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.panel-body{
+    background-image: url("../images/background.png");
+    border-left: 0.1px solid black;
+    border-right: 0.1px solid black;
+	overflow-y: scroll;
+	max-height: 450px;
+}
+
+.chat{
+	list-style: none;
+	background: none;
+	margin: 0;
+	padding: 0 0 50px 0;
+	margin-top: 60px;
+	margin-top: 10px;
+}
+.chat li{
+	padding: 0.5rem;
+	overflow: hidden;
+	display: flex;
+}
+.chat .avatar{
+	width: 40px;
+	height: 40px;
+	position: relative;
+	display: block;
+	z-index: 2;
+	border-radius: 100%;
+	background-color: rgba(255,255,255,0.9);
+}
+.chat .avatar img{
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	background-color: rgba(255,255,255,0.9);
+}
+.other .msg{
+	order: 1;
+	width: 200px;
+	border-radius: 10px;
+	background-color: purple;
+	margin-left: 10px;
+}
+#msgs{
+	margin-top: 15px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+
+.self{
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+.self .msg{
+    order: 1;
+    width: 200px;
+	min-width: 50px;
+	border-radius: 10px;
+	background-color: teal;
+	padding: 10px;
+}
+/*footer */
+.panel-footer {
+	position: relative;
+	margin-bottom: 0px;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	height: 50px;
+	z-index: 99;
+	background: url("../images/background.png");
+	border: 0.05px solid black;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	outline: none;
+	padding-left: 20px;
+	padding-right: 55px;
+	color: #666;
+	font-weight: 400;
+	border-top: 0px;
+}
+input.textarea{/*text area */
+	width: 70%;
+	padding-left: 10px; 
+	border: 0px;
+	border-radius: 10px;
+	box-shadow: 3px grey;
+}
+/*icons*/
+.inner-addon{
+	position: relative;
+}
+.inner-addon #plus{
+	position: absolute;
+	padding-left: 5px;
+	padding-top: 2px;
+}
+.left-addon #plus{
+	left: 5px;
+	opacity: 0.6;
+}
+
+.left-addon input{
+	padding-left: 30px;
+}
+.inner-addon #smile{
+	position: absolute;
+	padding-right: 30px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.right-addon #smile{
+	right: 10px;
+	opacity: 0.6;
+}
+#mic{
+	position: absolute;
+	padding-right: 2px;
+	padding-top: 4px;
+	padding-bottom: 4px;	
+	right: 5px;
+	opacity: 0.6;
+}
+
+
